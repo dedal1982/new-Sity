@@ -97,6 +97,7 @@ ul {
   font-size: 30px;
   line-height: 35.22px;
   color: #fff;
+  transition: all 0.2s ease-out;
 }
 .nav-link img {
   width: auto;
@@ -104,8 +105,5 @@ ul {
 }
 .nav-link.active {
   font-weight: 700;
-  background: #6c2cff;
-}
-.nav-link:hover {
   background: #6c2cff;
 }
