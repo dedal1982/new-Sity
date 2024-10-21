@@ -25,3 +25,10 @@ promoMoscow.style.backgroundImage = `url(${backgrounds[currentIndex]})`;
 currentIndex = (currentIndex + 1) % backgrounds.length;
 
 localStorage.setItem("backgroundIndex", currentIndex);
+
+//мобильное меню
+const burgerButton = document.querySelector(".burger-button");
+
+burgerButton.addEventListener("click", () => {
+  burgerButton.classList.toggle("active");
+});

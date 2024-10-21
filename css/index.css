@@ -98,8 +98,15 @@ ul {
     height: 26.96px;
     background: url(../icons/btn-burger.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin: 0 20px 0 auto;
+    backdrop-filter: blur(42.73080062866211px);
+    border-radius: 524.95px;
+  }
+  .burger-button.active {
+    background: url(../icons/btn-burger-closed.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 @media screen and (max-width: 767px) {
@@ -401,4 +408,11 @@ h1 {
   background: #6c2cff33;
   border: 1.05px solid #121212;
   backdrop-filter: blur(42.73080062866211px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-btn img {
+  width: 8.17px;
+  height: 15px;
 }
