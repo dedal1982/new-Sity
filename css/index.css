@@ -168,6 +168,11 @@ h1 {
   height: 73px;
   margin: 72px auto 0;
 }
+@media screen and (max-width: 1150px) {
+  .page-guide {
+    height: 53px;
+  }
+}
 .page-guide-btn {
   padding-left: 52px;
   padding-right: 52px;
@@ -189,6 +194,14 @@ h1 {
   width: auto;
   height: auto;
   object-fit: cover;
+}
+@media screen and (max-width: 1150px) {
+  .page-guide-btn {
+    font-size: 20px;
+    line-height: 25.22px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 /*---page-inner---*/
 .page-inner {
