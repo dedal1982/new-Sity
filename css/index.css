@@ -52,6 +52,9 @@ ul {
   max-width: 1287px;
   width: 100%;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 /*---promo---*/
 .promo {
