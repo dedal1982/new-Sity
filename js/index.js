@@ -28,7 +28,9 @@ localStorage.setItem("backgroundIndex", currentIndex);
 
 //мобильное меню
 const burgerButton = document.querySelector(".burger-button");
+const menuMobile = document.querySelector(".menu-mobile");
 
 burgerButton.addEventListener("click", () => {
   burgerButton.classList.toggle("active");
+  menuMobile.classList.toggle("active");
 });

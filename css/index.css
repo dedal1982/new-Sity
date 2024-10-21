@@ -99,9 +99,12 @@ ul {
     background: url(../icons/btn-burger.png);
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 0 20px 0 auto;
     backdrop-filter: blur(42.73080062866211px);
     border-radius: 524.95px;
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    z-index: 100;
   }
   .burger-button.active {
     background: url(../icons/btn-burger-closed.png);
@@ -415,4 +418,18 @@ h1 {
 .inner-btn img {
   width: 8.17px;
   height: 15px;
+}
+/*---menu-mobile---*/
+.menu-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #9b9f9f;
+  z-index: 10;
+  visibility: hidden;
+}
+.menu-mobile.active {
+  visibility: visible;
 }
