@@ -31,6 +31,24 @@ const burgerButton = document.querySelector(".burger-button");
 const menuMobile = document.querySelector(".menu-mobile");
 
 burgerButton.addEventListener("click", () => {
+  document.body.classList.toggle("close");
   burgerButton.classList.toggle("active");
   menuMobile.classList.toggle("active");
 });
+
+//закрытие мобильного меню при клике на ссылку
+const menuMobileLinks = document.querySelectorAll(".menu-mobile-link");
+
+if (menuMobileLinks) {
+  menuMobileLinks.forEach((item) => {
+    item.addEventListener("click", () => {
+      document.body.classList.remove("close");
+      burgerButton.classList.remove("active");
+      menuMobile.classList.remove("active");
+    });
+  });
+}
+
+//проскроливанние меню
+const innerBtnPrev = document.querySelector(".inner-btn-prev");
+const innerBtnNext = document.querySelector(".inner-btn-next");
