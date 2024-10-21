@@ -75,8 +75,13 @@ ul {
 @media screen and (max-width: 767px) {
   .promo {
     padding-top: 17px;
-    padding-bottom: 92px;
+    padding-bottom: 132px;
   }
+}
+.promo-container {
+  max-width: 1287px;
+  width: 100%;
+  margin: 0 auto;
 }
 .promo-moscow {
   background-repeat: no-repeat;
@@ -239,7 +244,7 @@ h1 {
 @media screen and (max-width: 767px) {
   .page-guide {
     height: 98px;
-    margin: 32px auto 0 0;
+    margin: 32px auto 0 15px;
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
@@ -295,6 +300,8 @@ h1 {
 @media screen and (max-width: 1150px) {
   .page-inner {
     gap: 6px 8px;
+    padding: 0 15px;
+    box-sizing: border-box;
   }
 }
 @media screen and (max-width: 960px) {
@@ -305,6 +312,8 @@ h1 {
 @media screen and (max-width: 767px) {
   .page-inner {
     margin-top: 22px;
+    padding: 0 0 0 15px;
+    box-sizing: border-box;
     overflow: auto;
   }
 }
@@ -339,10 +348,14 @@ h1 {
 }
 @media screen and (max-width: 767px) {
   .inner-item {
-    width: 193px;
     height: 50px;
     gap: 11px;
     padding-left: 15px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .inner-item {
+    width: 193px;
   }
 }
 .inner-item:hover {
@@ -369,4 +382,23 @@ h1 {
   .inner-item-icon-mobile {
     display: block;
   }
+}
+.inner-item-btns {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .inner-item-btns {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 9px auto 0 15px;
+  }
+}
+.inner-btn {
+  width: 29.29px;
+  height: 31.25px;
+  border-radius: 524.95px;
+  background: #6c2cff33;
+  border: 1.05px solid #121212;
+  backdrop-filter: blur(42.73080062866211px);
 }
