@@ -57,8 +57,8 @@ ul {
 .promo {
   width: 100%;
   height: 100dvh;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .promo-moscow {
   background: url(../images/moscow-1.webp);
@@ -69,13 +69,9 @@ ul {
 .nav-list {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 97px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 97px auto 0;
   width: fit-content;
   height: 84.8px;
-  margin: 0 auto;
   background: #6c2cff33;
   border-radius: 1000px;
   border: 2px solid #121212;
@@ -105,4 +101,37 @@ ul {
 }
 .nav-link.active {
   background: #6c2cff;
+}
+/*---promo-page---*/
+.promo-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-title {
+  width: fit-content;
+  margin: 51px auto 0;
+  position: relative;
+}
+.page-title span {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 58.7px;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  font-weight: 700;
+  font-size: 144.12px;
+  line-height: 169.2px;
+  color: #fff;
+}
+.page-guide {
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
