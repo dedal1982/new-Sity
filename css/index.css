@@ -169,6 +169,29 @@ h1 {
 /*---page-inner---*/
 .page-inner {
   display: grid;
-  grid-template-columns: repeat(3, minmax, auto);
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
   gap: 17px 22px;
+  margin: 140px auto 0;
+}
+.inner-item {
+  width: 100%;
+  height: 95px;
+  background: #fff;
+  border: 2px solid #121212;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35.22px;
+  color: #121212;
+}
+.inner-item:hover {
+  background: #6c2cff;
+  color: #fff;
+  border: 2px solid #ffffff;
 }
