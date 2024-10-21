@@ -104,6 +104,5 @@ ul {
   height: auto;
 }
 .nav-link.active {
-  font-weight: 700;
   background: #6c2cff;
 }
