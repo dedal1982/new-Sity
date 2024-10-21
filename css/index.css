@@ -237,6 +237,8 @@ h1 {
 }
 @media screen and (max-width: 1150px) {
   .inner-item {
+    font-size: 18px;
+    line-height: 21.13px;
   }
 }
 .inner-item:hover {
@@ -252,4 +254,15 @@ h1 {
 }
 .inner-item:hover .inner-item-icon {
   fill: #fff;
+}
+.inner-item-icon-mobile {
+  display: none;
+}
+@media screen and (max-width: 1150px) {
+  .inner-item-icon {
+    display: none;
+  }
+  .inner-item-icon-mobile {
+    display: block;
+  }
 }
