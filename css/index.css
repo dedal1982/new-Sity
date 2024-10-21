@@ -304,8 +304,8 @@ h1 {
 }
 @media screen and (max-width: 767px) {
   .page-inner {
-    width: 591px;
     margin-top: 22px;
+    overflow: auto;
   }
 }
 .inner-item {
@@ -339,8 +339,10 @@ h1 {
 }
 @media screen and (max-width: 767px) {
   .inner-item {
+    width: 193px;
     height: 50px;
     gap: 11px;
+    padding-left: 15px;
   }
 }
 .inner-item:hover {
