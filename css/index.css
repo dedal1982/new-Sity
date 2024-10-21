@@ -216,6 +216,11 @@ h1 {
     gap: 6px 8px;
   }
 }
+@media screen and (max-width: 767px) {
+  .page-inner {
+    width: 591px;
+  }
+}
 .inner-item {
   width: 100%;
   height: 95px;
@@ -239,6 +244,16 @@ h1 {
   .inner-item {
     font-size: 18px;
     line-height: 21.13px;
+    gap: 20px;
+    height: 70px;
+    padding-left: 28px;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .inner-item {
+    height: 50px;
+    gap: 11px;
   }
 }
 .inner-item:hover {
