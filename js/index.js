@@ -48,7 +48,3 @@ if (menuMobileLinks) {
     });
   });
 }
-
-//проскроливанние меню
-const innerBtnPrev = document.querySelector(".inner-btn-prev");
-const innerBtnNext = document.querySelector(".inner-btn-next");

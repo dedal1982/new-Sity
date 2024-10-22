@@ -389,32 +389,7 @@ h1 {
     display: block;
   }
 }
-.inner-item-btns {
-  display: none;
-}
-@media screen and (max-width: 767px) {
-  .inner-item-btns {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin: 9px auto 0 15px;
-  }
-}
-.inner-btn {
-  width: 29.29px;
-  height: 31.25px;
-  border-radius: 524.95px;
-  background: #6c2cff33;
-  border: 1.05px solid #121212;
-  backdrop-filter: blur(42.73080062866211px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.inner-btn img {
-  width: 8.17px;
-  height: 15px;
-}
+
 /*---menu-mobile---*/
 .menu-mobile {
   position: absolute;
