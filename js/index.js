@@ -11,9 +11,9 @@ navLink.forEach((item) => {
 });
 
 const backgrounds = [
-  "../moscow/moscow1.jfif",
-  "../moscow/moscow2.jfif",
-  "../moscow/moscow3.jfif",
+  "./moscow/moscow1.jfif",
+  "./moscow/moscow2.jfif",
+  "./moscow/moscow3.jfif",
 ];
 
 let currentIndex = localStorage.getItem("backgroundIndex");
