@@ -69,13 +69,12 @@ ul {
 }
 @media screen and (max-width: 960px) {
   .promo {
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
 }
 @media screen and (max-width: 767px) {
   .promo {
-    padding-top: 17px;
     padding-bottom: 132px;
   }
 }
@@ -250,7 +249,7 @@ h1 {
 @media screen and (max-width: 767px) {
   .page-guide {
     height: 98px;
-    margin: 32px auto 0 15px;
+    margin: 19px auto 0 15px;
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
