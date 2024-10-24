@@ -433,3 +433,127 @@ h1 {
 .menu-mobile-link.active {
   background: #6c2cff;
 }
+/*---news---*/
+.news {
+  max-width: 1287px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.news__top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.news__nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.news__nav a {
+  color: #fff;
+}
+.news__nav-btn {
+  width: 289px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(44, 118, 255, 1);
+  border-radius: 10px;
+  color: #fff;
+}
+.news__nav-btn img {
+  width: 24px;
+  height: 22.97px;
+}
+.news__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.news__item {
+  width: 100%;
+  display: flex;
+  gap: 45px;
+  background: #fff;
+  border-radius: 22px;
+  position: relative;
+  border: 2px solid #121212;
+}
+.news__item-img {
+  width: 242.29px;
+  height: 240.64px;
+  border-radius: 20px;
+}
+.news__item-img img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.no-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.news__item-text {
+  max-width: 772.82px;
+  width: 100%;
+  height: 164.18px;
+  display: flex;
+  flex-direction: column;
+  margin: 39px auto 0 0;
+}
+.news__item-text h2 {
+  margin-bottom: 10px;
+}
+.news__item-text p {
+  max-width: 560px;
+  width: 100%;
+}
+.news__item-like {
+  position: absolute;
+  right: 17px;
+  top: 23px;
+  fill: #d1d1d1;
+  cursor: pointer;
+}
+.news__item-like.active {
+  fill: #ff2c2c;
+}
+.news__item-go {
+  width: 173.89px;
+  height: 55.2px;
+  border-radius: 10px;
+  background: rgba(44, 118, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  right: 17px;
+  bottom: 17px;
+}
+.news__item-additions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 20px;
+}
+.additions {
+  display: flex;
+  padding: 10px 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2c76ff;
+  color: #2c76ff;
+  background: #fff;
+  border-radius: 5.97px;
+}

@@ -48,3 +48,14 @@ if (menuMobileLinks) {
     });
   });
 }
+
+//лайк
+const itemLike = document.querySelectorAll(".news__item-like");
+
+if (itemLike) {
+  itemLike.forEach((item) => {
+    item.addEventListener("click", () => {
+      item.classList.toggle("active");
+    });
+  });
+}
