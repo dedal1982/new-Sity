@@ -20,7 +20,9 @@ let currentIndex = localStorage.getItem("backgroundIndex");
 currentIndex = currentIndex ? parseInt(currentIndex) : 0;
 
 const promoMoscow = document.querySelector(".promo-moscow");
-promoMoscow.style.backgroundImage = `url(${backgrounds[currentIndex]})`;
+if (promoMoscow) {
+  promoMoscow.style.backgroundImage = `url(${backgrounds[currentIndex]})`;
+}
 
 currentIndex = (currentIndex + 1) % backgrounds.length;
 
@@ -30,11 +32,13 @@ localStorage.setItem("backgroundIndex", currentIndex);
 const burgerButton = document.querySelector(".burger-button");
 const menuMobile = document.querySelector(".menu-mobile");
 
-burgerButton.addEventListener("click", () => {
-  document.body.classList.toggle("close");
-  burgerButton.classList.toggle("active");
-  menuMobile.classList.toggle("active");
-});
+if (burgerButton) {
+  burgerButton.addEventListener("click", () => {
+    document.body.classList.toggle("close");
+    burgerButton.classList.toggle("active");
+    menuMobile.classList.toggle("active");
+  });
+}
 
 //закрытие мобильного меню при клике на ссылку
 const menuMobileLinks = document.querySelectorAll(".menu-mobile-link");
@@ -57,5 +61,18 @@ if (itemLike) {
     item.addEventListener("click", () => {
       item.classList.toggle("active");
     });
+  });
+}
+
+//выбор города
+const choiceCityBtn = document.querySelector(".main-start__choice");
+const choiceNested = document.querySelector(".choice-nested");
+const choiceIcon = document.querySelector(".choice-image");
+
+if (choiceCityBtn) {
+  choiceCityBtn.addEventListener("click", () => {
+    choiceCityBtn.classList.toggle("active");
+    choiceNested.classList.toggle("active");
+    choiceIcon.classList.toggle("active");
   });
 }
