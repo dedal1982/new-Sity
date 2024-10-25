@@ -11,7 +11,7 @@
   max-width: 400px;
   width: 100%;
   height: 250px;
-  display: flex;
+  display: none;
   flex-direction: column;
   position: absolute;
   top: 50%;
@@ -21,6 +21,9 @@
   padding-left: 15px;
   padding-right: 15px;
   box-sizing: border-box;
+}
+.main-start__wrapper.active {
+  display: flex;
 }
 .main-start__iinner {
   width: 100%;
@@ -127,4 +130,17 @@
   line-height: 25px;
   color: #fff;
   cursor: pointer;
+}
+.main-start-logo {
+  display: block;
+  width: 147px;
+  height: 52px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.main-start-logo.active {
+  display: none;
 }

@@ -65,6 +65,24 @@ if (itemLike) {
 }
 
 //выбор города
+const mainStartLogo = document.querySelector(".main-start-logo");
+const mainStartWrapper = document.querySelector(".main-start__wrapper");
+const mainStartClosed = document.querySelector(".main-start__closed");
+
+if (mainStartLogo) {
+  mainStartLogo.addEventListener("click", () => {
+    mainStartWrapper.classList.add("active");
+    mainStartLogo.classList.add("active");
+  });
+}
+
+if (mainStartClosed) {
+  mainStartClosed.addEventListener("click", () => {
+    mainStartWrapper.classList.remove("active");
+    mainStartLogo.classList.remove("active");
+  });
+}
+
 const choiceCityBtn = document.querySelector(".main-start__choice");
 const choiceNested = document.querySelector(".choice-nested");
 const choiceIcon = document.querySelector(".choice-image");
