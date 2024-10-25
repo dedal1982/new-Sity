@@ -1,0 +1,9 @@
+.work__item-text {
+  margin: auto auto auto 0;
+  height: fit-content;
+}
+.news {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}

@@ -317,8 +317,8 @@ h1 {
 @media screen and (max-width: 767px) {
   .page-inner {
     margin-top: 22px;
-    box-sizing: border-box;
-    overflow: auto;
+    grid-template-columns: 1fr;
+    gap: 5px;
   }
 }
 .inner-item {
@@ -359,7 +359,7 @@ h1 {
 }
 @media screen and (max-width: 620px) {
   .inner-item {
-    width: 193px;
+    width: 100%;
   }
 }
 .inner-item:hover {
@@ -556,4 +556,38 @@ h1 {
   color: #2c76ff;
   background: #fff;
   border-radius: 5.97px;
+}
+/*--------------------------------------index2.html-----------------------------------------*/
+.page-swiper {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .page-inner {
+    display: none;
+  }
+  .page-swiper {
+    margin-top: 22px;
+    display: flex;
+    width: 350px;
+    height: 370px;
+  }
+  .page-swiper-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: var(--swiper-navigation-top-offset, 85%) !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #6c2cff33;
+    border: 1px solid #fff;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    color: #fff;
+    font-size: 16px;
+  }
 }
