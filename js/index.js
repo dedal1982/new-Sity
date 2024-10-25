@@ -76,3 +76,19 @@ if (choiceCityBtn) {
     choiceIcon.classList.toggle("active");
   });
 }
+
+const choiceSity = document.querySelectorAll(".choice-sity");
+const choiceSityMain = document.querySelector(".choice-sity-main");
+const choiceButton = document.querySelector(".choice-button");
+
+if (choiceSity) {
+  choiceSity.forEach((item) => {
+    item.addEventListener("click", () => {
+      choiceSityMain.textContent = item.textContent;
+      choiceButton.href = item.id;
+      choiceCityBtn.classList.remove("active");
+      choiceNested.classList.remove("active");
+      choiceIcon.classList.remove("active");
+    });
+  });
+}
